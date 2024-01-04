@@ -1,0 +1,14 @@
+{% extends 'bootstrap/base.html' %}
+<!--this provides the default design of a form-->
+{% import "bootstrap/wtf.html" as wtf %}
+<!--this allows the use of wtf form-->
+
+{% block title %}
+Login
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Login</h1>
+    {{ wtf.quick_form(form, novalidate=True) }}
+</div>
+{% endblock %}
